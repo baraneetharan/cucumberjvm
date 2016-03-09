@@ -9,7 +9,7 @@ import cucumber.api.CucumberOptions;
 		features="..\\cucumber\\src\\test\\java\\cucumber\\BDD\\Features\\",
 		//SecondFeature
 		//features="D:\\Nithya\\cucumber\\src\\test\\java\\cucumber\\BDD\\Features\\FirstFeature",
-glue = "cucumber.BDD.Defenition",
+glue = "cucumberjvm.BDD.Defenition",
 dryRun = false,
 strict = true,
 //tags = {"@web", "@second", "@secondfeatures1"},
