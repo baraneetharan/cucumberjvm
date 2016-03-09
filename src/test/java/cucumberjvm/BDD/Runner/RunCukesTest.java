@@ -1,4 +1,4 @@
-package cucumber.BDD.Runner;
+package cucumberjvm.BDD.Runner;
 
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 

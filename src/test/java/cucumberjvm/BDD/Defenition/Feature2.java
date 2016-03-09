@@ -1,4 +1,4 @@
-package cucumber.BDD.Defenition;
+package cucumberjvm.BDD.Defenition;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
