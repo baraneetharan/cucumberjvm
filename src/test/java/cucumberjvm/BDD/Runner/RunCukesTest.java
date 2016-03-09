@@ -6,14 +6,14 @@ import cucumber.api.CucumberOptions;
 
 //@CucumberOptions(plugin = "json:target/cucumber-report.json")
 @CucumberOptions(
-		features="..\\cucumber\\src\\test\\java\\cucumber\\BDD\\Features\\",
+		features="..\\cucumberjvm\\src\\test\\java\\cucumberjvm\\BDD\\Features\\",
 		//SecondFeature
-		//features="D:\\Nithya\\cucumber\\src\\test\\java\\cucumber\\BDD\\Features\\FirstFeature",
+		//features="D:\Baranee\Testing\Java\cucumberjvm\src\test\java\cucumberjvm\BDD\Features",
 glue = "cucumberjvm.BDD.Defenition",
 dryRun = false,
 strict = true,
 //tags = {"@web", "@second", "@secondfeatures1"},
-tags = {"@sample"},
+tags = {"@search"},
 plugin = {
 "pretty",
   "html:target/html",

@@ -1,1 +1,88 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "id": "when-i-go-to-the-google-search-page,-and-search-for-an-item,;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 62673697,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "that I have gone to the Google page",
+            "match": {
+              "location": "search.that_i_have_gone_to_the_google_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1487649,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I add \"cats\" to the search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cats",
+                  "offset": 7
+                }
+              ],
+              "location": "search.i_add_something_to_the_search_box(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42195,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click the Search Button",
+            "match": {
+              "location": "search.click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84674,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"cats\" should be mentioned in the results",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cats",
+                  "offset": 1
+                }
+              ],
+              "location": "search.something_should_be_mentioned_in_the_results(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@search"
+          }
+        ]
+      }
+    ],
+    "name": "When I go to the Google search page, and search for an item,",
+    "description": "I expect to see some reference to that item in the result summary.\u0027",
+    "id": "when-i-go-to-the-google-search-page,-and-search-for-an-item,",
+    "keyword": "Feature",
+    "uri": "bingsearch.feature"
+  }
+]

@@ -89,12 +89,12 @@ table.stats-table td {
             window.onload = function () {
                 var steps = Raphael("steps_chart");
                 steps.text(45, 280, "Steps").attr({ font: "30px sans-serif" });
-                steps.piechart(200, 150, 120, [ 0.000001 ,  0.000001 ,  0.000001 ,  0.000001 ], { legend: ["%%.%% - Passed", "%%.%% - Failed", "%%.%% - Skipped", "%%.%% - Pending"], legendpos: "east", colors: ["#FBB917","#cc1134","#88dd11","#88aaff"]});
+                steps.piechart(200, 150, 120, [ 4 ,  0.000001 ,  0.000001 ,  0.000001 ], { legend: ["%%.%% - Passed", "%%.%% - Failed", "%%.%% - Skipped", "%%.%% - Pending"], legendpos: "east", colors: ["#88dd11","#FBB917","#cc1134","#88aaff"]});
 
 
                 var scenarios = Raphael("scenarios_chart");
                 scenarios.text(75, 280, "Scenarios").attr({ font: "30px sans-serif", fill: "white" });
-                scenarios.piechart(200, 150, 120, [ 0.000001 , 0.000001 ], { legend: ["%%.%% - Passed", "%%.%% - Failed"], legendpos: "east", colors: ["#cc1134","#88dd11"], legendcolor: "white"});
+                scenarios.piechart(200, 150, 120, [ 1 , 0.000001 ], { legend: ["%%.%% - Passed", "%%.%% - Failed"], legendpos: "east", colors: ["#88dd11","#cc1134"], legendcolor: "white"});
             };
         </script>
         <noscript>
@@ -139,17 +139,35 @@ table.stats-table td {
 </tr>
 
       
+                    
+          
+
+          
+          <tr>
+          <td style="text-align:left;"><a id="stats-When I go to the Google search page, and search for an item," href="bingsearch.feature.html">When I go to the Google search page, and search for an item,</a></td>
+          <td id="stats-number-scenarios-When I go to the Google search page, and search for an item,">1</td>
+          <td id="stats-number-scenarios-passed-When I go to the Google search page, and search for an item,">1</td>
+          <td id="stats-number-scenarios-failed-When I go to the Google search page, and search for an item,">0</td>
+          <td id="stats-number-steps-When I go to the Google search page, and search for an item,">4</td>
+          <td id="stats-number-steps-passed-When I go to the Google search page, and search for an item,">4</td>
+          <td id="stats-number-steps-failed-When I go to the Google search page, and search for an item,">0</td>
+          <td id="stats-number-steps-skipped-When I go to the Google search page, and search for an item,">0</td>
+          <td id="stats-number-steps-pending-When I go to the Google search page, and search for an item,">0</td>
+          <td id="stats-duration-When I go to the Google search page, and search for an item,">64 ms</td>
+          <td id="stats-status-When I go to the Google search page, and search for an item," style="background-color: #C5D88A;">passed</td>
+          </tr>
+      
 <tr>
-<td id="stats-total-features" style="background-color:lightgray;font-weight:bold;">0</td>
-<td id="stats-total-scenarios" style="background-color:lightgray;font-weight:bold;">0</td>
-<td id="stats-total-scenarios-passed" style="background-color:lightgray;font-weight:bold;">0</td>
+<td id="stats-total-features" style="background-color:lightgray;font-weight:bold;">1</td>
+<td id="stats-total-scenarios" style="background-color:lightgray;font-weight:bold;">1</td>
+<td id="stats-total-scenarios-passed" style="background-color:lightgray;font-weight:bold;">1</td>
 <td id="stats-total-scenarios-failed" style="background-color:lightgray;font-weight:bold;">0</td>
-<td id="stats-total-steps" style="background-color:lightgray;font-weight:bold;">0</td>
-<td id="stats-total-steps-passed" style="background-color:lightgray;font-weight:bold;">0</td>
+<td id="stats-total-steps" style="background-color:lightgray;font-weight:bold;">4</td>
+<td id="stats-total-steps-passed" style="background-color:lightgray;font-weight:bold;">4</td>
 <td id="stats-total-steps-failed" style="background-color:lightgray;font-weight:bold;">0</td>
 <td id="stats-total-steps-skipped" style="background-color:lightgray;font-weight:bold;">0</td>
 <td id="stats-total-steps-pending" style="background-color:lightgray;font-weight:bold;">0</td>
-<td id="stats-total-duration" style="background-color:lightgray;font-weight:bold;">0 ms</td>
+<td id="stats-total-duration" style="background-color:lightgray;font-weight:bold;">64 ms</td>
 <td id="stats-total-totals" style="background-color:lightgray;font-weight:bold;">Totals</td>
 </tr></table>
 	</div>
@@ -161,7 +179,7 @@ table.stats-table td {
 	<div class="container_12">
 		<div class="grid_12 hr"></div>
 		<div class="grid_12 footer">
-			<p style="text-align:center;">Cucumber-JVM Jenkins Report Plugin - version: cucumber-reporting-0.0.22 - 09-03-2016 10:45:12</p>
+			<p style="text-align:center;">Cucumber-JVM Jenkins Report Plugin - version: cucumber-reporting-0.0.22 - 09-03-2016 12:00:21</p>
 		</div>
 	</div>
 	<div class="clear"></div>

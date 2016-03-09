@@ -26,7 +26,7 @@
                 $(document).ready(function () {
                     jQuery('#stacked-graph').tufteBar({
                         data:[
-                            
+                            [[4,0,0,0],{label:'@search'}],
                         ],
                         color:function (index, stackedIndex) {
                             return ['#88dd11', '#cc1134', '#88aaff', '#FBB917'][stackedIndex]
@@ -242,12 +242,104 @@
 <div class="container_12">
     <div class="grid_12">
 
-                    <div><p>You have no tags in your cucumber features</p></div>
+        
+                            <div>
+                                        <div style="background-color: #E6FCFF;width:800px;height:450px;border: 1px solid gray;" >
+                      <div id='stacked-graph' class='graph' style='width:630px; height: 340px;'></div>
+                    </div>
+                    
+                    <br/>
+                </div>
+                    <br/>
+
+        <div class="grid_12 hr"></div>
+
+        <div>
+            <br/>
+            <h2>Tag Statistics</h2>
+            <table class="stats-table">
+                <tr>
+    <th></th>
+    <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+    <th id="stats-header-steps" colspan="5">Steps</th>
+    <th></th>
+    <th></th>
+</tr>
+<tr>
+    <th id="stats-header-feature">Feature</th>
+    <th id="stats-header-scenarios-total">Total</th>
+    <th id="stats-header-scenarios-passed">Passed</th>
+    <th id="stats-header-scenarios-failed">Failed</th>
+    <th id="stats-header-steps-total">Total</th>
+    <th id="stats-header-steps-passed" style="background-color:#C5D88A;">Passed</th>
+    <th id="stats-header-steps-failed" style="background-color:#D88A8A;">Failed</th>
+    <th id="stats-header-steps-skipped" style="background-color:#2DEAEC;">Skipped</th>
+    <th id="stats-header-steps-pending" style="background-color:#ebcc81;">Pending</th>
+    <th id="stats-header-duration">Duration</th>
+    <th id="stats-header-status">Status</th>
+</tr>
+
+
+                
+                                        
+                    <tr>
+                        <td style="text-align:left;">
+                            <a href="search.html">@search</a>
+
+                              <br/><span> $customHeaders.get($tag.getTagName())</span>
+
+                        </td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>64 ms</td>
+                        <td style="background-color: #C5D88A;">passed</td>
+                    </tr>
+                
+                <!--  add row to adjust num of steps -->
+                <tr>
+                    <td style="background-color:lightgray;font-weight:bold;">background steps </td>
+                    <td style="background-color:lightgray;font-weight:bold;">0</td>
+                    <td style="background-color:lightgray;font-weight:bold;">0</td>
+                    <td style="background-color:lightgray;font-weight:bold;">0</td>
+                    <td style="background-color:lightgray;font-weight:bold;">0</td>
+                    <td style="background-color:lightgray;font-weight:bold;">0</td>
+                    <td style="background-color:lightgray;font-weight:bold;">0</td>
+                    <td style="background-color:lightgray;font-weight:bold;">0</td>
+                    <td style="background-color:lightgray;font-weight:bold;">0</td>
+                    <td style="background-color:lightgray;font-weight:bold;">0 ms</td>
+                    <td style="background-color:lightgray;font-weight:bold;">Totals</td>
+                </tr>
+                <!--  Summarize all steps and time executions -->
+                                <tr>
+                    <td style="background-color:lightgray;font-weight:bold;">1</td>
+                    <td style="background-color:lightgray;font-weight:bold;">1</td>
+                    <td style="background-color:lightgray;font-weight:bold;">1</td>
+                    <td style="background-color:lightgray;font-weight:bold;">0</td>
+                    <td style="background-color:lightgray;font-weight:bold;">4</td>
+                    <td style="background-color:lightgray;font-weight:bold;">4</td>
+                    <td style="background-color:lightgray;font-weight:bold;">0</td>
+                    <td style="background-color:lightgray;font-weight:bold;">0</td>
+                    <td style="background-color:lightgray;font-weight:bold;">0</td>
+                    <td style="background-color:lightgray;font-weight:bold;">64 ms</td>
+                    <td style="background-color:lightgray;font-weight:bold;">Totals</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+
         
 <div class="container_12">
     <div class="grid_12 hr"></div>
     <div class="grid_12 footer">
-        <p style="text-align:center;">Cucumber-JVM Jenkins Report Plugin - version: cucumber-reporting-0.0.22 - 09-03-2016 10:45:12</p>
+        <p style="text-align:center;">Cucumber-JVM Jenkins Report Plugin - version: cucumber-reporting-0.0.22 - 09-03-2016 12:00:21</p>
     </div>
 </div>
 <div class="clear"></div>
