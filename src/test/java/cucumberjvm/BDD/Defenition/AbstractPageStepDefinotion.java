@@ -18,7 +18,8 @@ public class AbstractPageStepDefinotion {
 	@BeforeSuite
 	public void openbrowser()
 	{
-		driver = new FirefoxDriver();		
+		driver = new FirefoxDriver();
+		system.out.println("FirefoxDriver initiated");
 	}
 	@AfterSuite
 	public void closebrowser()
